@@ -6,13 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            background: #f09433;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); */
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+
+        #username {
+            width: 30%;
+            border: none;
+            border-radius: 30px;
+            padding: 8px 15px;
+            font-weight: bold;
+
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        #submit {
+            border: none;
+            background: none;
+            color: white;
+            padding: 8px 10px;
+            border-radius: 30px;
+            background: white;
+            color: #bc1888;
+            font-weight: bold;
+            margin-left: 10px;
+
+        }
+
+        .center {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        pre {
+            word-wrap: break-word;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" id="username" name="username" value="instagram"/>
-    <input type="submit" id="submit">
-    <pre id="json"></pre>
-    <script src="script.js"></script>
+    <div class="wrapper">
+        <div class="center">
+            <input type="text" id="username" name="username" value="instagram" />
+            <input type="submit" id="submit">
+        </div>
+        <pre id="json"></pre>
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
